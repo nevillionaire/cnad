@@ -27,7 +27,7 @@ cnad.start();
 ```
 
 > Find your path to npm
-![npm part](https://user-images.githubusercontent.com/52476329/189543876-7e0e2358-7004-4af3-b083-ffdc8b4bb6ff.png)
+![npm path](https://user-images.githubusercontent.com/52476329/189543876-7e0e2358-7004-4af3-b083-ffdc8b4bb6ff.png)
 
 
 Let cnad do the magic. just keep pushing code to your repo and cnad will do the job for you.
