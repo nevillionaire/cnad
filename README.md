@@ -9,7 +9,7 @@ npm i @bitc/cnad
 ```
 
 # How it works
-It watches your `package.json` file, once there is a changes. it install the packges for you and restart the server.
+It watches your `package.json` file, once there is a changes. it install you packages for you and restart the server.
 
 very simple right? 🙂🤩 yea.
 
@@ -25,6 +25,9 @@ cnad.config("/home/user/nodevenv/site_file_root/node_version");
 
 cnad.start();
 ```
+
+> Find your path to npm
+![npm part](https://user-images.githubusercontent.com/52476329/189543876-7e0e2358-7004-4af3-b083-ffdc8b4bb6ff.png)
 
 
 Let cnad do the magic. just keep pushing code to your repo and cnad will do the job for you.
@@ -129,7 +132,6 @@ jobs:
     web-deploy:
         name: 🎉 Deploy
         runs-on: ubuntu-latest
-        needs: [build]
 
         steps:
             - name: Clone repository
