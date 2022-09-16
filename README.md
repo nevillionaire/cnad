@@ -9,7 +9,7 @@ npm i @bitc/cnad
 ```
 
 # How it works
-It watches your `package.json` file, once there is a changes. it install you packages for you and restart the server.
+It watches your `package.json` file, once there is a changes. it install your dependencies and restart the server.
 
 very simple right? 🙂🤩 yea.
 
@@ -18,10 +18,13 @@ very simple right? 🙂🤩 yea.
 
 # Example
 ```js
-//server,js
+//server.js
 const cnad = require("@bitc/cnad");
 
 cnad.config("/home/user/nodevenv/site_file_root/node_version");
+
+// Make CNAD listen for other files to restart the server
+cnad.watch(["path/to/different/restart/file.txt", "another/path/to/restart/file.txt"]);
 
 cnad.start();
 ```
@@ -80,7 +83,7 @@ jobs:
             - name: Clone repository
               uses: actions/checkout@v3
 
-			# Important job, this is use to restart your server
+			# Important step, this is use to restart your server
             - name: Creating restart file
               run: |
                 mkdir tmp && touch tmp/restart.txt 

@@ -7,6 +7,12 @@
  */
  export function config(PATH: string): boolean;
 
+ /**
+ * Watch for changes. 
+ * 
+ * if there is, then the server will restart
+ */
+ export function watch(RESTART_PATHS: []): void;
 
  /**
   * 

@@ -1,3 +1,10 @@
+VERSION 1.1.0::::
+    * Stable release of watch feature.
+	* Improved logger.
+
+VERSION 1.1.0-alpha::::
+    * add watch features
+
 VERSION 1.0.0::::
     * first release
 
